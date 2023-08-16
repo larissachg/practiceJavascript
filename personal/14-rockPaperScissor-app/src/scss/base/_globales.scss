@@ -1,0 +1,46 @@
+@use "variables" as *;
+@use "mixins" as m;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(20, 57, 88);
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+button{
+  width: 7rem;
+  color: rgb(20, 57, 88);
+  padding: 1rem 0;
+  border-radius: 4rem;
+  background-color: white;
+  border: none;
+  box-shadow: 2px 0px 10px 1px rgb(133, 219, 245);
+  margin: 0 1rem;
+  cursor: pointer;
+
+  @include m.tablet{
+    font-size: 2rem;
+    width: 12rem;
+  }
+
+  @include m.desktop{
+    font-size: 2.2rem;
+    width: 14rem;
+  }
+}
+
+button:focus{
+  background-color: rgb(133, 219, 245);
+}
