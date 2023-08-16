@@ -1,4 +1,11 @@
 import "../scss/style.scss"; 
+import paperImg from "../assets/img/paper-pc.png";
+import paperImg2 from "../assets/img/paper.svg";
+import rockImg from "../assets/img/rock-pc.png";
+import rockImg2 from "../assets/img/rock.svg";
+import scissorImg from "../assets/img/scissor-pc.png";
+import scissorImg2 from "../assets/img/scissor.svg";
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const rock = 0;
@@ -16,20 +23,20 @@ document.addEventListener("DOMContentLoaded", function () {
   //Eventos a cada boton
   
   rockBtn.addEventListener("click", () => {
-    playerWeapon.src = "./public/assets/img/rock.svg";
+    playerWeapon.src = rockImg2;
     removeBlur();
 
     computerTurn(rock);
   });
 
   paperBtn.addEventListener("click", () => {
-    playerWeapon.src = "./public/assets/img/paper.svg";
+    playerWeapon.src = paperImg2;
     removeBlur();
     computerTurn(paper);
   });
 
   scissorBtn.addEventListener("click", () => {
-    playerWeapon.src = "./public/assets/img/scissor.svg";
+    playerWeapon.src = scissorImg2;
     removeBlur();
     computerTurn(scissor);
   });
@@ -46,13 +53,13 @@ document.addEventListener("DOMContentLoaded", function () {
       randomWeapon = Math.floor(Math.random() * 3);
       
       if (randomWeapon === 0) {
-        computerWeapor.src = "./public/assets/img/rock-pc.png";
+        computerWeapor.src = rockImg;
       }
       if (randomWeapon === 1) {
-        computerWeapor.src = "./public/assets/img/paper-pc.png";
+        computerWeapor.src = paperImg;
       }
       if (randomWeapon === 2) {
-        computerWeapor.src = "./public/assets/img/scissor-pc.png";
+        computerWeapor.src = scissorImg;
       }
     }, 100);
 
