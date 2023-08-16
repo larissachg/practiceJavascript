@@ -1,11 +1,13 @@
-import "../scss/style.scss"; 
-import paperImg from "../assets/img/paper-pc.png";
-import paperImg2 from "../assets/img/paper.svg";
-import rockImg from "../assets/img/rock-pc.png";
-import rockImg2 from "../assets/img/rock.svg";
-import scissorImg from "../assets/img/scissor-pc.png";
-import scissorImg2 from "../assets/img/scissor.svg";
+import "../scss/style.scss";
 
+import {
+  paperImg,
+  paperImg2,
+  rockImg,
+  rockImg2,
+  scissorImg,
+  scissorImg2,
+} from "../assets/img";
 
 document.addEventListener("DOMContentLoaded", function () {
   const rock = 0;
@@ -21,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const scissorBtn = document.querySelector("#scissor");
 
   //Eventos a cada boton
-  
+
   rockBtn.addEventListener("click", () => {
     playerWeapon.src = rockImg2;
     removeBlur();
@@ -42,16 +44,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const removeBlur = () => {
-    playerWeapon.classList.remove('game__turn-icon--blur');
-    computerWeapor.classList.remove('game__turn-icon--blur');
-  }
+    playerWeapon.classList.remove("game__turn-icon--blur");
+    computerWeapor.classList.remove("game__turn-icon--blur");
+  };
 
   //Funcion Turno del Computador
   const computerTurn = (playerWeapon) => {
     let randomWeapon = 0;
     const interval = setInterval(() => {
       randomWeapon = Math.floor(Math.random() * 3);
-      
+
       if (randomWeapon === 0) {
         computerWeapor.src = rockImg;
       }
@@ -65,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(() => {
       clearInterval(interval);
-      playGame(randomWeapon, playerWeapon)
+      playGame(randomWeapon, playerWeapon);
     }, 1000);
   };
 
@@ -74,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const winner = document.querySelector("#winner");
   const score = document.querySelector("#score");
 
-  const playGame = (computerChoice,playerChoice) => { 
+  const playGame = (computerChoice, playerChoice) => {
     if (playerChoice === computerChoice) {
       score.textContent = `${playerScore} - ${computerScore}`;
       winner.textContent = "Empate";
@@ -111,12 +113,12 @@ document.addEventListener("DOMContentLoaded", function () {
     paperBtn.disabled = true;
     scissorBtn.disabled = true;
 
-    const newGameBtn = document.querySelector('#newGame');
+    const newGameBtn = document.querySelector("#newGame");
     newGameBtn.style.visibility = "visible";
-    playerWeapon.classList.add('game__turn-icon--blur');
-    computerWeapor.classList.add('game__turn-icon--blur');
-    
-    newGameBtn.addEventListener('click', () => {
+    playerWeapon.classList.add("game__turn-icon--blur");
+    computerWeapor.classList.add("game__turn-icon--blur");
+
+    newGameBtn.addEventListener("click", () => {
       newGameBtn.style.visibility = "hidden";
       rockBtn.disabled = false;
       paperBtn.disabled = false;
@@ -124,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
       playerScore = 0;
       computerScore = 0;
       winner.textContent = "";
-      score.textContent= "0 - 0";
-    })
-  }
+      score.textContent = "0 - 0";
+    });
+  };
 });
