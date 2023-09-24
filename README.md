@@ -13,7 +13,7 @@
 | `09` | 8-datos,Calcular,ParesImpares,Primo,Factorial,Acumular,Includes | [Ver](personal/8-datos,Calcular,ParesImpares,Primo,Factorial,Acumular,Includes) |
 | `10` | 9formPracticeJS | [Ver](personal/9formPracticeJS) |
 | `11` | 10-contar,Cortar,Separar,Repetir,Invertir,Validar,Filtrar,Aleatorio,Factorial, | [Ver](personal/10-contar,Cortar,Separar,Repetir,Invertir,Validar,Filtrar,Aleatorio,Factorial,) |
-| `11b` | 11-ParImpar,Temperatura,Descuento%,calcularAnhos,ContarVocales | [Ver](personal/11-ParImpar,Temperatura,Descuento%,calcularAnhos,ContarVocales) |
-| `12` | 12-mapNuevoArray,powElevado,max,min,parImpar | [Ver](personal/12-mapNuevoArray,powElevado,max,min,parImpar) |
-| `13` | 13-sortAsceDesc,setEliminarDuplicados,reducePromedio | [Ver](personal/13-sortAsceDesc,setEliminarDuplicados,reducePromedio) |
-| `14` | 14-rockPaperScissor-app | [Ver](personal/14-rockPaperScissor-appa) | [Visitar](https://rockpaperscissor-game-lara.netlify.app/) |
+| `12` | 11-ParImpar,Temperatura,Descuento%,calcularAnhos,ContarVocales | [Ver](personal/11-ParImpar,Temperatura,Descuento%,calcularAnhos,ContarVocales) |
+| `13` | 12-mapNuevoArray,powElevado,max,min,parImpar | [Ver](personal/12-mapNuevoArray,powElevado,max,min,parImpar) |
+| `14` | 13-sortAsceDesc,setEliminarDuplicados,reducePromedio | [Ver](personal/13-sortAsceDesc,setEliminarDuplicados,reducePromedio) |
+| `15` | 14-rockPaperScissor-app | [Ver](personal/14-rockPaperScissor-appa) | [Visitar](https://rockpaperscissor-game-lara.netlify.app/) |
