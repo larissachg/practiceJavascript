@@ -16,4 +16,4 @@
 | `11b` | 11-ParImpar,Temperatura,Descuento%,calcularAnhos,ContarVocales | [Ver](personal/11-ParImpar,Temperatura,Descuento%,calcularAnhos,ContarVocales) |
 | `12` | 12-mapNuevoArray,powElevado,max,min,parImpar | [Ver](personal/12-mapNuevoArray,powElevado,max,min,parImpar) |
 | `13` | 13-sortAsceDesc,setEliminarDuplicados,reducePromedio | [Ver](personal/13-sortAsceDesc,setEliminarDuplicados,reducePromedio) |
-| `14` | 14-rockPaperScissor-app | [Ver](personal/14-rockPaperScissor-appa) | [Visitar]([https://midu-react-14.surge.sh](https://rockpaperscissor-game-lara.netlify.app/)https://rockpaperscissor-game-lara.netlify.app/) |
+| `14` | 14-rockPaperScissor-app | [Ver](personal/14-rockPaperScissor-appa) | [Visitar](https://rockpaperscissor-game-lara.netlify.app/) |
